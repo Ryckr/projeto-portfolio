@@ -83,7 +83,7 @@ section#ficha img.foto{
 h1{
   color: var(--destaque);
   margin: 15px 0px;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: left;
 }
 div#social{
@@ -233,7 +233,27 @@ footer a{
 footer a:hover{
   color: var(--destaque-inverso);
 }
+
 @media screen and (min-width: 768px){
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  section#ficha{
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhe{
+    grid-column: 3 / 4;
+  }
+
   #skill-container{
     grid-template-columns: 1fr 1fr;
   }
