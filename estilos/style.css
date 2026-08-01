@@ -213,6 +213,15 @@ article#video .video-container{
   border-radius: 8px;
   border-left: 5px solid var(--destaque-inverso);
   transition: border-color 0.3s, border-width 0.3s;
+
+    a{
+      text-decoration: none;
+      color: var(--texto);
+      transition: color 0.3s;
+    }
+    a:hover{
+      color: var(--destaque);
+    }
 }
 
 #projeto-container .projeto:hover{
@@ -226,7 +235,10 @@ article#video .video-container{
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
+
 }
+
+
 
 footer{
   background-color: var(--destaque);
